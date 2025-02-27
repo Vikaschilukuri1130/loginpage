@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Combined Page</title>
+    <style>
+        /* Basic styling to display the iframes side by side */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        iframe {
+            width: 45%;
+            height: 500px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="#" method="POST">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="login-btn">Login</button>
-            <div class="footer">
-                <p>Don't have an account? <a href="#">Sign up</a></p>
-            </div>
-        </form>
+
+    <h1>Combined Pages: ind.html and simple.html</h1>
+
+    <div class="container">
+        <iframe src="ind.html" title="ind.html"></iframe>
+        <iframe src="simple.html" title="simple.html"></iframe>
     </div>
+
 </body>
 </html>
